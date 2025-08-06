@@ -1,0 +1,131 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6a41c !important;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 100px; /* Espaço para o header fixo */
+
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(23, 65, 65);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+#logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+#logo p {
+    margin-left: 20px;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    width: 80%;
+}
+
+#foto-header {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Navegação */
+#nav {
+    background-color: rgb(23, 65, 65) !important;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+#nav a {
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Conteúdo Principal */
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.quemSomos {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    background-color: white;
+    height: 70px;
+    padding: 20px;
+    font-size: 22px !important;
+}
+
+/* Rodapé */
+#footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    #logo {
+        height: 70px;
+    }
+
+    #logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #nav a {
+        margin: 10px 0;
+        display: block;
+    }
+
+    .section {
+        padding: 30px;
+    }
+}

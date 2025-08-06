@@ -1,0 +1,5 @@
+{
+  "title": "Bem-vindo à Minha Página!",
+  "subtitle": "Esta é uma landing page com Flask e Jinja2.",
+  "button_text": "Saiba Mais"
+}
